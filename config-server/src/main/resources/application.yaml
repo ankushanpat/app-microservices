@@ -1,0 +1,13 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          search-locations : file:///G:/filesystem
+      label : main
+  profiles:
+    active: native
